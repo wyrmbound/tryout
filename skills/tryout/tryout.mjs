@@ -104,7 +104,8 @@ function find(trials, name) {
 
 const fmt = (t, now = Date.now()) => {
   const left = Date.parse(t.ends) - now;
-  const when = left <= 0 ? 'ended' : left < DAY ? `${Math.ceil(left / HOUR)}h left` : `${Math.round(left / DAY)}d left`;
+  const when = left <= 0 ? 'ended' : left < HOUR ? `${Math.max(1, Math.round(left / 60e3))}m left`
+    : left < DAY ? `${Math.ceil(left / HOUR)}h left` : `${Math.round(left / DAY)}d left`;
   return `- ${t.name} (${t.kind}) ends ${t.ends.slice(0, 16).replace('T', ' ')} UTC, ${when}${t.source ? ' — ' + t.source : ''}`;
 };
 

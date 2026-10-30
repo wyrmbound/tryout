@@ -1,6 +1,6 @@
 {
   "name": "tryout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Try plugins, skills and MCP servers on a timed trial. Get reminded before a trial ends; anything you don't keep is removed automatically.",
   "license": "MIT",
   "keywords": ["trial", "plugins", "skills", "mcp", "cleanup"]
