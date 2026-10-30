@@ -1,0 +1,16 @@
+{
+  "description": "Remove ended trials and remind about ones ending soon",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/skills/tryout/tryout.mjs\" check",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

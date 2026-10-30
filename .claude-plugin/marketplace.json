@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tryout",
+  "description": "Timed trials for Claude Code add-ons.",
+  "owner": { "name": "tryout contributors" },
+  "plugins": [
+    {
+      "name": "tryout",
+      "description": "Try plugins, skills and MCP servers on a timed trial; unkept ones are removed automatically.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
